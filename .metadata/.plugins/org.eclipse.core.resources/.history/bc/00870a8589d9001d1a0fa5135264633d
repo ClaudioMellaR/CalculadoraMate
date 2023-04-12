@@ -1,0 +1,30 @@
+package calculos.cl;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.DisplayName;
+
+class CalculosMateTest {
+
+	@Test
+	void testSumar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testRestar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testMultiplicar() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testDividir() {
+		fail("Not yet implemented");
+	}
+
+}

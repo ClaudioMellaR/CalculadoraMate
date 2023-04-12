@@ -1,0 +1,57 @@
+package calculos.cl;
+
+import java.util.Scanner;
+
+public class CalculosMate {
+static Scanner sc = new Scanner(System.in); //Variable de clase
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int op = 0;
+		int num1 = 0;
+		int num2 = 0;
+		//Ciclo do while para desplegar menú
+			
+			do {
+				System.out.println("Ingreso número 1");
+				num1 = sc.nextInt();
+				System.out.println("Ingreso número 2");
+				num2 = sc.nextInt();
+				System.out.println("--------------------");
+				System.out.println("      MENÚ          ");
+				System.out.println("--------------------");
+				System.out.println("1.-Sumar");
+				System.out.println("2.-Restar");
+				System.out.println("3.-Multiplicar");
+				System.out.println("4.-Dividir");
+				System.out.println("5.-Salir");
+				System.out.println("Ingrese una opción");
+				op = sc.nextInt();
+				
+				switch (op) {
+				
+				case 1:
+					sumar(num1,num2);
+					break;
+				case 2:
+					restar(num1,num2);
+					break;
+				case 3:
+					multiplicar(num1,num2);
+				case 4:
+					dividir(num1,num2);
+				case 5:
+					salir();
+				default:
+					System.out.println("Opción inválida");
+				}
+			}while(op!=5);
+	}
+		
+			static void suma(int valor1, int valor2) {
+			int resultado = valor1+valor2;
+			
+		}
+		
+			
+}

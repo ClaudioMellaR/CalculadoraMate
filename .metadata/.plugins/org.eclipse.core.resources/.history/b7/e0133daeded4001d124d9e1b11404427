@@ -1,0 +1,21 @@
+package masa.cl;
+import java.util.Scanner;
+
+public class MasaCorporal {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			//Se pregunta al usuario cuál es su edad
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Ingrese su edad: ");
+			//Se guarda la edad en una variable entera
+			int edad = sc.nextInt();
+			//Se evalúa si la edad ingresada es mayor a 17 años
+				if(edad >= 18) {
+				}else {
+					System.out.println("Usted es menor de edad");
+				}
+
+	
+	}
+}

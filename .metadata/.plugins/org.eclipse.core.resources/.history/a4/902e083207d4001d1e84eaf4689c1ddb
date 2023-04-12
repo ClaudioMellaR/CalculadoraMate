@@ -1,0 +1,70 @@
+package cl.pitagoras;
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class cateto {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float cateto1 = 0f;
+		float cateto2 = 0f;
+		float hipotenusa = 0f;
+		boolean continua;
+		
+		Scanner tecla = new Scanner(System.in);
+		
+		do {
+			continua = false;
+			try {
+				System.out.println("Ingrese un cateto:");
+				cateto1=tecla.nextFloat();
+			} catch (InputMismatchException ex) {
+				System.out.println("Debe ingresar obligatoriamente un número");
+				continua = true;
+				tecla.next();
+			}
+		}while(continua);
+		
+		do {
+			continua = false;
+			try {
+				System.out.println("Ingrese la Hipotenusa:");
+				hipotenusa=tecla.nextFloat();
+			} catch (InputMismatchException ex) {
+				System.out.println("Debe ingresar obligatoriamente un número");
+				continua = true;
+				tecla.next();
+			}
+		}while(continua);
+		
+		cateto2 = (float) Math.sqrt((Math.pow(hipotenusa, 2) - Math.pow(cateto1, 2)));
+		System.out.printf("El cateto es %.2f " , cateto2);
+		
+		/*}catch (InputMismatchException ex){
+			System.out.println("No se pueden ingresar letras, debe ser un numero. Intente nuevamente ");
+			tecla.next();	
+			continua = true;
+			
+		}
+		
+		} while (continua);*/
+
+		tecla.close();
+		}		
+}
+
+		
+
+/*do {
+    try {
+        continua = false;
+        System.out.print("Ingrese un valor entero:");
+        num = teclado.nextInt();
+        int cuadrado = num * num;
+        System.out.print("El cuadrado de " + num + " es " + cuadrado);
+    } catch (InputMismatchException ex) {
+        System.out.println("Debe ingresar obligatoriamente un n�mero entero.");
+        teclado.next();
+        continua = true;
+    }
+} while (continua);*/
