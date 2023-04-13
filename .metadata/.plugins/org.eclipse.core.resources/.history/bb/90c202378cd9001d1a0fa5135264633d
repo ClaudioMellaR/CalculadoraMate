@@ -42,7 +42,7 @@ static int num2 = 0;
 					break;
 				case 5:
 					salir();
-					op = 5;
+					//op = 5;
 					break;
 				default:
 					System.out.println("Opción inválida");

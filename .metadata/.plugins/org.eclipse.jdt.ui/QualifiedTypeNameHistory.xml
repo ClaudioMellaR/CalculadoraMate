@@ -4,4 +4,7 @@
     <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.DisplayName"/>
+    <fullyQualifiedTypeName name="calculos.cl.CalculosMate"/>
+    <fullyQualifiedTypeName name="calculos.cl.CalculosMateTest"/>
 </qualifiedTypeNameHistroy>
